@@ -1,4 +1,4 @@
 object Constant {
-    const val SERVICE_NAME = "attiead-article"
-    const val VERSION = "1.0.0"
+    const val SERVICE_NAME = "attiead-student"
+    const val VERSION = "0.0.0"
 }

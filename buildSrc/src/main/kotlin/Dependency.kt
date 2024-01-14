@@ -1,8 +1,9 @@
 object Dependency {
-    const val targetJvmVersion = "17"
+    const val targetJvmVersion = "21"
     const val kotlinVersion = "1.9.21"
-    const val springBootVersion = "3.2.0"
+    const val springBootVersion = "3.2.1"
     const val springCloudVersion = "2023.0.0"
+    const val detektVersion = "1.23.4"
 
     const val jacocoToolVersion = "0.8.10"
 
@@ -14,7 +15,7 @@ object Dependency {
 
     const val openApiStarterWebMvcVersion = "2.0.2"
 
-    const val mapStructVersion = "1.5.4.Final"
+    const val mapStructVersion = "1.5.5.Final"
 
     const val querydslVersion = "5.0.0"
 
