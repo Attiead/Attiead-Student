@@ -70,7 +70,7 @@ dependencies {
     implementation("commons-codec:commons-codec:1.15")
 
     // detekt
-    detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.22.0")
+    detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:${Dependency.detektVersion}")
 
     // Map Struct
     implementation("org.mapstruct:mapstruct:${Dependency.mapStructVersion}")
@@ -90,28 +90,20 @@ dependencies {
     testImplementation("com.epages:restdocs-api-spec-mockmvc:${Dependency.restdocsapiSpecVersion}")
     testImplementation("com.epages:restdocs-api-spec-model:${Dependency.restdocsapiSpecVersion}")
 
-
     // kotest
     testImplementation("io.kotest:kotest-runner-junit5:${Dependency.kotestVersion}")
     testImplementation("io.kotest.extensions:kotest-extensions-spring:${Dependency.kotestSprintExtensions}")
     testImplementation("io.mockk:mockk:${Dependency.mockkVersion}")
-    testImplementation("com.ninja-squad:springmockk:${Dependency.springMockkVersion}")
 
     // test
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.mockito.kotlin:mockito-kotlin:4.1.0")
     testImplementation("org.mockito:mockito-inline:5.2.0")
-    testImplementation("com.github.javafaker:javafaker:0.12")
     testImplementation("com.h2database:h2")
     testImplementation("org.springframework.cloud:spring-cloud-contract-wiremock")
 
 
     implementation(kotlin("stdlib-jdk8"))
-
-    // fixture
-    testImplementation("com.appmattus.fixture:fixture:1.2.0")
-    testImplementation("com.appmattus.fixture:fixture-javafaker:1.2.0")
-
 }
 
 tasks {
