@@ -3,7 +3,7 @@ package com.attiead.student.domain.table
 import com.attiead.student.common.entity.BaseEntity
 import com.attiead.student.domain.vo.*
 import jakarta.persistence.*
-import java.util.UUID
+import java.util.*
 
 @Entity
 @Table(name = "students")
@@ -35,4 +35,4 @@ class Student(
     @Enumerated(EnumType.STRING)
     val preferredTeachingStyles: PreferredTeachingStyles = PreferredTeachingStyles.INSTRUCTOR_LEAD
 
-): BaseEntity()
+) : BaseEntity()
