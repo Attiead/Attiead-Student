@@ -1,9 +1,18 @@
 package com.attiead.student.domain.table
 
 import com.attiead.student.common.entity.BaseEntity
-import com.attiead.student.domain.vo.*
-import jakarta.persistence.*
-import java.util.*
+import com.attiead.student.domain.vo.EducationLevel
+import com.attiead.student.domain.vo.TutoringSubject
+import com.attiead.student.domain.vo.ClassFormat
+import com.attiead.student.domain.vo.PreferredTeachingStyles
+import com.attiead.student.domain.vo.CurrentAcademicLevel
+import com.attiead.student.domain.vo.MentoringTopics
+import jakarta.persistence.Table
+import jakarta.persistence.Entity
+import jakarta.persistence.Column
+import jakarta.persistence.Enumerated
+import jakarta.persistence.EnumType
+import java.util.UUID
 
 @Entity
 @Table(name = "students")
