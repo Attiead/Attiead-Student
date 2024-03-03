@@ -34,4 +34,4 @@ class Student(
     @Column(name = "assignment_deadline")
     val assignmentDeadline: LocalDateTime
 
-    ) : BaseEntity()
+) : BaseEntity()
