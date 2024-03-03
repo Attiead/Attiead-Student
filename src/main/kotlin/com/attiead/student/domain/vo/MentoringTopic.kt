@@ -1,7 +1,7 @@
 package com.attiead.student.domain.vo
 
-enum class MentoringTopics(val description: String) {
-    NONE("해당없음"),
+enum class MentoringTopic(val description: String) {
+    NONE("선택안함"),
     ACADEMIC_ADVISORY("학업 상담"),
     ASSIGNMENT_HELP("과제 도움"),
     CAREER_GUIDANCE("진로 지도"),
