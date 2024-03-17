@@ -1,4 +1,4 @@
-package com.attiead.student.domain.service.student.Impl
+package com.attiead.student.domain.service.student.impl
 
 import com.attiead.student.domain.service.student.StudentCrudService
 import com.attiead.student.domain.table.Student
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service
 @Service
 class StudentService(
     private val studentRepository: StudentRepository
-): StudentCrudService {
+) : StudentCrudService {
     override fun saveStudent(student: Student) {
         studentRepository.save(student)
     }
