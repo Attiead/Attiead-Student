@@ -4,9 +4,10 @@ import com.attiead.student.domain.table.Student
 import com.attiead.student.domain.vo.MentoringTopic
 import jakarta.validation.constraints.NotNull
 import java.time.LocalDateTime
-import java.util.*
 
 data class StudentCreateRequestDTO(
+
+    val sid: String,
 
     @field:NotNull
     val uid: String,
