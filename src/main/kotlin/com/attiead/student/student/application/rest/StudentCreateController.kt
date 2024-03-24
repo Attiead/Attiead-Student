@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseStatus
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("/api/v1/studentInfo")
+@RequestMapping("/api/v1/students")
 class StudentCreateController(private val studentApplicationService: StudentApplicationService) {
 
     @ResponseStatus(HttpStatus.OK)
