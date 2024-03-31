@@ -21,7 +21,7 @@ class StudentCreateController(private val studentApplicationService: StudentAppl
         @Valid @RequestBody
         studentCreateRequestDTO: StudentCreateRequestDTO
     ): ResponseDTO<Unit> {
-        studentApplicationService.createStudent(studentCreateRequestDTO)
+        studentApplicationService.registerStudentInfo(studentCreateRequestDTO)
         return ResponseDTO.success()
     }
 }
