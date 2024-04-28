@@ -15,7 +15,7 @@ interface StudentMapper {
     }
 
     @Mappings(
-        Mapping(target = "sid", expression = "java(UUID.randomUUID().toString())"),
+        Mapping(target = "sid", expression = "java(java.util.UUID.randomUUID().toString())"),
         Mapping(target = "mentoringTopic", expression = "java(com.attiead.student.domain.vo.MentoringTopic.NONE)")
     )
     fun convertToStudent(
