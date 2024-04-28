@@ -21,7 +21,6 @@ version = Constant.VERSION
 java.sourceCompatibility = JavaVersion.toVersion(Dependency.targetJvmVersion)
 
 repositories {
-    maven(uri("https://jitpack.io"))
     mavenCentral()
 }
 
