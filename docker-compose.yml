@@ -4,14 +4,14 @@ services:
     image: mysql
     container_name: article-service-mysql-db
     environment:
-      - MYSQL_DATABASE=article-service
+      - MYSQL_DATABASE=student-service
       - MYSQL_ROOT_HOST=%
       - MYSQL_ROOT_PASSWORD=1234
     ports:
-      - 3306:3306
+      - "3306:3306"
     volumes:
       - ./db/data:/var/lib/mysql
-
+    user: mysql
 #  zookeeper:
 #    image: confluentinc/cp-zookeeper:latest
 #    environment:

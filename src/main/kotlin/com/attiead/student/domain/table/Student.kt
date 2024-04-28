@@ -13,11 +13,11 @@ import java.util.UUID
 @Entity
 @Table(name = "students")
 class Student(
-    @Column(name = "uid")
-    val uid: String,
-
     @Column(name = "sid")
     val sid: String = UUID.randomUUID().toString(),
+
+    @Column(name = "uid")
+    val uid: String,
 
     @Column(name = "school_email")
     val schoolEmail: String,
