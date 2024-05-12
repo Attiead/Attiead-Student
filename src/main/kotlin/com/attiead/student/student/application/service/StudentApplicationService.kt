@@ -2,6 +2,7 @@ package com.attiead.student.student.application.service
 
 import com.attiead.student.common.mapper.StudentMapper
 import com.attiead.student.domain.service.StudentService
+import com.attiead.student.domain.table.Student
 import com.attiead.student.student.application.dto.request.StudentCreateRequestDTO
 import jakarta.transaction.Transactional
 import org.springframework.stereotype.Service
@@ -18,5 +19,10 @@ class StudentApplicationService(
         studentService.saveStudent(
             student = StudentMapper.INSTANCE.convertToStudent(studentCreateRequestDTO)
         )
+    }
+
+    @Transactional
+    fun getStudentInfo(sid: String): Student {
+        return studentService.getStudentById(sid)
     }
 }
