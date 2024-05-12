@@ -5,6 +5,8 @@ import com.attiead.student.domain.service.StudentService
 import com.attiead.student.domain.table.Student
 import com.attiead.student.student.application.dto.request.StudentCreateRequestDTO
 import jakarta.transaction.Transactional
+import org.springframework.data.domain.Page
+import org.springframework.data.domain.Pageable
 import org.springframework.stereotype.Service
 
 @Service
@@ -24,5 +26,10 @@ class StudentApplicationService(
     @Transactional
     fun getStudentInfo(sid: String): Student {
         return studentService.getStudentById(sid)
+    }
+
+    @Transactional
+    fun getAllStudents(pageable: Pageable): Page<Student> {
+        return studentService.getAllStudents(pageable)
     }
 }
