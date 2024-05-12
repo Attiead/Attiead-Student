@@ -7,5 +7,4 @@ import org.springframework.data.jpa.repository.JpaRepository
 interface StudentRepository : JpaRepository<Student, ID> {
 
     fun findBySid(sid: String): Student?
-
 }
