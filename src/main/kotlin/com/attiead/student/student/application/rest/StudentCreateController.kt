@@ -3,7 +3,6 @@ package com.attiead.student.student.application.rest
 import com.attiead.student.common.response.ResponseDTO
 import com.attiead.student.student.application.dto.request.StudentCreateRequestDTO
 import com.attiead.student.student.application.service.StudentApplicationService
-import jakarta.validation.Valid
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
@@ -18,7 +17,7 @@ class StudentCreateController(private val studentApplicationService: StudentAppl
     @ResponseStatus(HttpStatus.OK)
     @PostMapping
     fun createStudentInfo(
-        @Valid @RequestBody
+        @RequestBody
         studentCreateRequestDTO: StudentCreateRequestDTO
     ): ResponseDTO<Unit> {
         studentApplicationService.registerStudentInfo(studentCreateRequestDTO)
